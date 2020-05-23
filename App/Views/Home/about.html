@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}{{ name }}{% endblock %}
+{% block header %}<h1>{{ name }}</h1>{% endblock %}
+
+{% block body %}
+
+{% for item in colours %}
+<a href="{{item}}">{{item}}</a>
+{% endfor %}
+<a href="/">index</a>
+
+
+
+{% endblock %}
